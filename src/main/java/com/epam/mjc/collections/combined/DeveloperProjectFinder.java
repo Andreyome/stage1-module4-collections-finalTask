@@ -10,6 +10,7 @@ if(projects.get(key).contains(developer)){
     result.add(key);
 }
         }
+        Collections.sort(result, Collections.reverseOrder());
 Collections.sort(result,Comparator.comparing(String::length).reversed());
         return result;
     }
